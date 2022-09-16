@@ -46,12 +46,12 @@ struct ProfileView: View {
                         .default(Text("Galerie Photo")){
                             changeProfileImage = true
                             openCamera = true
-                            ImagePicker(sourceType: .photoLibrary, selectedImage: $imageSelected)
+                           // ImagePicker(sourceType: .photoLibrary, selectedImage: $imageSelected)
                         },
                         .default(Text("Camera")){
                             changeProfileImage = true
                             openCamera = true
-                            ImagePicker(sourceType: .camera, selectedImage: $imageSelected)
+                           // ImagePicker(sourceType: .camera, selectedImage: $imageSelected)
                             
                         }
                     ])
