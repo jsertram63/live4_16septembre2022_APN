@@ -13,14 +13,17 @@ struct ProfileView: View {
     @State var changeProfileImage = false
     @State var openCamera = false
     @State var imageSelected = UIImage()
-    @State private var showSheet : Bool
+    @State var showSheet = false
+   
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             Button {
-                changeProfileImage = true
-                openCamera = true
-            } label: {
+           
+                showSheet = true
+            }
+        
+            label: {
                 // case ou on a selectionné une image dans la galerie
                 if changeProfileImage{
                     Image(uiImage: imageSelected)
@@ -37,7 +40,22 @@ struct ProfileView: View {
                         .clipShape(Circle())
                     
                 }
-        }
+        }.padding()
+                .actionSheet(isPresented: $showSheet) {
+                    ActionSheet(title: Text("Selectionnez une photo"), message:Text("Choisir"), buttons: [
+                        .default(Text("Galerie Photo")){
+                            changeProfileImage = true
+                            openCamera = true
+                            ImagePicker(sourceType: .photoLibrary, selectedImage: $imageSelected)
+                        },
+                        .default(Text("Camera")){
+                            changeProfileImage = true
+                            openCamera = true
+                            ImagePicker(sourceType: .camera, selectedImage: $imageSelected)
+                            
+                        }
+                    ])
+                }
             Image(systemName: "plus")
                 .frame(width:30, height: 30)
                 .foregroundColor(.black)
