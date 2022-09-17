@@ -34,6 +34,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37C3FA4E28D5A6D00062884E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8983096528D473A4005176B2 /* ProfileVivew.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37C3FA4F28D5A6E10062884E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				897260E628D476F400D8B731 /* ImagePicker.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8983095728D473A4005176B2 = {
 			isa = PBXGroup;
 			children = (
@@ -54,10 +70,10 @@
 			isa = PBXGroup;
 			children = (
 				8983096328D473A4005176B2 /* live4_16septembre2022_APNApp.swift */,
-				8983096528D473A4005176B2 /* ProfileVivew.swift */,
+				37C3FA4F28D5A6E10062884E /* Model */,
+				37C3FA4E28D5A6D00062884E /* View */,
 				8983096728D473A6005176B2 /* Assets.xcassets */,
 				8983096928D473A6005176B2 /* Preview Content */,
-				897260E628D476F400D8B731 /* ImagePicker.swift */,
 			);
 			path = live4_16septembre2022_APN;
 			sourceTree = "<group>";
@@ -274,7 +290,8 @@
 				DEVELOPMENT_TEAM = SV32QZFP9X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Autorisez vous l'acces à votre appareil photo";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Autorisez vous l'accès à votre appareil photo";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Autorisez-vous l'accès à votre librairie";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,7 +321,8 @@
 				DEVELOPMENT_TEAM = SV32QZFP9X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Autorisez vous l'acces à votre appareil photo";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Autorisez vous l'accès à votre appareil photo";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Autorisez-vous l'accès à votre librairie";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
