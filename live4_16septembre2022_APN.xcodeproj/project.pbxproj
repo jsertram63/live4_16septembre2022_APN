@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37C3FA5128D5BA740062884E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C3FA5028D5BA740062884E /* LaunchScreen.storyboard */; };
 		897260E728D476F400D8B731 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897260E628D476F400D8B731 /* ImagePicker.swift */; };
 		8983096428D473A4005176B2 /* live4_16septembre2022_APNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8983096328D473A4005176B2 /* live4_16septembre2022_APNApp.swift */; };
 		8983096628D473A4005176B2 /* ProfileVivew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8983096528D473A4005176B2 /* ProfileVivew.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37C3FA5028D5BA740062884E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		897260E628D476F400D8B731 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		8983096028D473A4005176B2 /* live4_16septembre2022_APN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = live4_16septembre2022_APN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8983096328D473A4005176B2 /* live4_16septembre2022_APNApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = live4_16septembre2022_APNApp.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				8983096528D473A4005176B2 /* ProfileVivew.swift */,
+				37C3FA5028D5BA740062884E /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C3FA5128D5BA740062884E /* LaunchScreen.storyboard in Resources */,
 				8983096B28D473A6005176B2 /* Preview Assets.xcassets in Resources */,
 				8983096828D473A6005176B2 /* Assets.xcassets in Resources */,
 			);
@@ -290,13 +294,14 @@
 				DEVELOPMENT_TEAM = SV32QZFP9X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = APNApp;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Autorisez vous l'accès à votre appareil photo";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Autorisez-vous l'accès à votre librairie";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,13 +326,14 @@
 				DEVELOPMENT_TEAM = SV32QZFP9X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = APNApp;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Autorisez vous l'accès à votre appareil photo";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Autorisez-vous l'accès à votre librairie";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

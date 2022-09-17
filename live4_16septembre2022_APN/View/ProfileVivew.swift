@@ -93,7 +93,7 @@ struct ProfileView: View {
             }
             .padding()
             .sheet(isPresented: $openCamera) {
-                ImagePicker(sourceType: sourceType, selectedImage: $imageSelected)
+                sheetView
             }
         }
     }
@@ -102,5 +102,13 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
+    }
+}
+
+extension ProfileView {
+    private var sheetView: some View {
+        VStack {
+            ImagePicker(sourceType: sourceType, selectedImage: $imageSelected)
+        }
     }
 }
