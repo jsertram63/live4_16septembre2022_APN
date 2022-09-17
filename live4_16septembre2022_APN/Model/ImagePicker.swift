@@ -9,16 +9,14 @@ import Foundation
 import UIKit
 import SwiftUI
 
-
+// Protocole permettant de construire une vue
 struct ImagePicker: UIViewControllerRepresentable {
-    
-    // source type définit la libraire photo ou la camera
-    var sourceType: UIImagePickerController.SourceType = .photoLibrary
-    // variale pour lié l'image selectionné entre les vues
-    @Binding var selectedImage:UIImage
+    // source type définit la libraire photo ou la caméra
+    var sourceType: UIImagePickerController.SourceType
+    // variable pour lier l'image selectionnée entre les vues
+    @Binding var selectedImage: UIImage
     // variable pour savoir si une modal est affiché
     @Environment(\.presentationMode) private var presentationMode
-    
     
     func makeUIViewController(context: Context) -> some UIViewController {
         let imagePicker = UIImagePickerController()
