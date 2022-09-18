@@ -71,10 +71,12 @@ struct ProfileView: View {
                         buttons: [
                             .default(
                                 Text("Galerie Photo")) {
+                                    sourceType = .photoLibrary
                                     changeProfileImage = true
                                     openCamera = true
                                 },
                             .default(Text("Camera")) {
+                                sourceType = .camera
                                 changeProfileImage = true
                                 openCamera = true
                             },
